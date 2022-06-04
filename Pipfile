@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "~=3.2.0"
+psycopg2-binary = "==2.8.5"
+python-dotenv = "*"
+pylint-django = "*"
+pycodestyle = "*"
+autopep8 = "*"
+pytest-django = "*"
+pytest-cov = "*"
+django-watson = "*"
+django-cors-headers = "*"
+django-allauth = "*"
+django-csp = "*"
+pre-commit = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
