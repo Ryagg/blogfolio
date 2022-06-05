@@ -14,6 +14,7 @@
 /*----- GENERAL STYLES -----*/
 body {
     font-family: "Ubuntu", sans-serif;
+    background-color: #ecf0f1;
 }
 
 h1,
@@ -38,4 +39,24 @@ h6 {
 .icon--smaller {
     width: 64px;
     height: 64px;
+}
+
+/*----- TEXT EFFECTS -----*/
+.heading__text--shadow {
+    /* code from https://css-tricks.com/almanac/properties/t/text-shadow/ */
+    color: #2c3e50;
+    text-shadow: 1px 0px 1px #ccddff, 0px 1px 1px #476685, 2px 1px 1px #ccddff, 1px 2px 1px #476685,
+        3px 2px 1px #ccddff, 2px 3px 1px #476685, 4px 3px 1px #ccddff, 3px 4px 1px #476685,
+        5px 4px 1px #ccddff, 4px 5px 1px #476685, 6px 5px 1px #ccddff, 5px 6px 1px #476685,
+        7px 6px 1px #ccddff;
+}
+
+.text__shadow--light {
+    text-shadow: 1px 1px 2px #eff6ff;
+}
+
+/*----- SHADOW EFFECTS -----*/
+.card__box-shadow {
+    -webkit-box-shadow: 10px 12px 0.5rem rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 12px 0.5rem rgba(0, 0, 0, 0.5);
 }
