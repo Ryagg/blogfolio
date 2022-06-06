@@ -73,7 +73,53 @@
     {% block content %}
     {% endblock %}
 
+    <footer class="py-3 bg-primary">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col col-lg-4 text-center">
+                    <img class="icon--smaller" src="{% static 'images/logo_bw.png' %} "
+                        alt="Logo with name, terminal, hammer, and settings symbol">
+                    <p class=" fs-6 text-white">&copy; <span id="year">2022</span>  Scott Böning</p>
+                </div>
+                <div class="col col-lg-4 text-center">
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item flex-fill">
+                            <a href="https://github.com/Ryagg" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-lg fa-github text-primary" aria-hidden="true"></i>
+                                <span class="sr-only sr-only-focusable has-text-black">Github profile</span>
+                            </a>
+                        </li>
+                        <li class="list-group-item flex-fill">
+                            <a href="https://www.linkedin.com/in/scott-boening-junior-software-developer/" target="_blank"
+                        rel="noopener noreferrer">
+                                <i class="fa-brands fa-lg fa-linkedin text-primary" aria-hidden="true"></i>
+                                <span class="sr-only sr-only-focusable has-text-black">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-group-item flex-fill">
+                            <a href="http://www.twitter.com/scottboening" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-lg fa-twitter text-primary" aria-hidden="true"></i>
+                                <span class="sr-only sr-only-focusable has-text-black">Twitter</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-lg-4 text-center">
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a class="text-white" href="#">Site Notice</a>
+                        </li>
+                        <li class="mb-2">
+                            <a class="text-white" href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     {% block postloadjs %}
+        <script src="{% static 'js/base.js' %}"></script>
     {% endblock %}
 
 </body>
