@@ -17,6 +17,7 @@ django-cors-headers = "*"
 django-allauth = "*"
 django-csp = "*"
 pre-commit = "*"
+django-debug-toolbar = "==2.2"
 
 [dev-packages]
 
