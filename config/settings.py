@@ -12,11 +12,15 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 import os
 import socket
+from email.policy import default
 from pathlib import Path
 
 from dotenv import load_dotenv
+from environs import Env
 
 load_dotenv()
+env = Env()
+env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -30,9 +34,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env.bool('DJANGO_DEBUG', default=False)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -69,6 +73,24 @@ MIDDLEWARE = [
 CACHE_MIDDLEWARE_ALIAS = 'default'
 CACHE_MIDDLEWARE_SECONDS = 36000
 CACHE_MIDDLEWARE_KEY_PREFIX = ''
+
+# Security settings
+# prevent data sniffing
+SECURE_SSL_REDIRECT = env.bool('DJANGO_SECURE_SSL_REDIRECT', default=True)
+# add Strict-Transport-Security header:
+SECURE_HSTS_SECONDS = env.int('DJANGO_SECURE_HSTS_SECONDS', default=300)
+# force subdomains to use SSL
+SECURE_HSTS_INCLUDE_SUBDOMAINS = env.bool(
+    'DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS', default=True,
+)
+# because SECURE_HSTS_SECONDS has non-zero value
+SECURE_HSTS_PRELOAD = env.bool('DJANGO_SECURE_HSTS_PRELOAD', default=True)
+
+# force cookies over HTTPS
+SESSION_COOKIE_SECURE = env.bool('DJANGO_SESSION_COOKIE_SECURE', default=True)
+
+# send only cookies marked as secure with an HTTPS connection
+CSRF_COOKIE_SECURE = env.bool('DJANGO_CSRF_COOKIE_SECURE', default=True)
 
 ROOT_URLCONF = 'config.urls'
 

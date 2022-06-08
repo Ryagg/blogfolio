@@ -18,6 +18,7 @@ django-allauth = "*"
 django-csp = "*"
 pre-commit = "*"
 django-debug-toolbar = ">=2.2.1"
+environs = {extras = ["django"], version = "*"}
 
 [dev-packages]
 
