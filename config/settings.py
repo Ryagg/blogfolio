@@ -79,8 +79,13 @@ CACHE_MIDDLEWARE_KEY_PREFIX = ''
 # Security settings
 # prevent data sniffing
 SECURE_SSL_REDIRECT = env.bool('DJANGO_SECURE_SSL_REDIRECT', default=True)
+
+# update header for heroku proxies
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 # add Strict-Transport-Security header:
 SECURE_HSTS_SECONDS = env.int('DJANGO_SECURE_HSTS_SECONDS', default=300)
+
 # force subdomains to use SSL
 SECURE_HSTS_INCLUDE_SUBDOMAINS = env.bool(
     'DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS', default=True,
