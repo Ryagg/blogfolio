@@ -3,7 +3,7 @@
 
 {% block content %}
     <!-- About -->
-    <section id="about" class="mt-5 pt-5 text-center bg-light">
+    <section id="about" class="mt-5 pt-5 text-center bg-secondary">
         <div class="container page-heading">
             <div class="row mt-5 pt-5">
                 <div class="col">
@@ -54,15 +54,15 @@
             <div class="row mb-5 pb-4">
                 <div class="col">
                     <div class="cta">
-                    <a class="btn btn-primary resume fw-bolder" href="{% static 'scott_boening_cv.pdf' %} " role="button" download="scott_boening_cv">Get Resume</a>
-                    <a class="btn btn-outline-primary fw-bolder" href="mailto:scott@sbftp.dev" role="button">Contact me</a>
+                    <a class="btn btn-primary resume fw-bolder" href="{% static 'scott_boening_cv.pdf' %} " role="button" download="scott_boening_cv">Get CV</a>
+                    <a class="btn btn-primary fw-bolder" href="mailto:scott@sbftp.dev" role="button">Contact me</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Portfolio -->
-    <section id="portfolio" class="pt-1 text-center bg-dark">
+    <section id="portfolio" class="pt-1 text-center bg-light">
         <div class="section-heading">
             <h2 class="mt-5 pt-3 heading__text--shadow">Portfolio</h2>
         </div>
@@ -77,9 +77,9 @@
                     <div class="card h-100 text-white bg-primary text-center card__box-shadow">
                         <div class="card-header">
                             <h5 class="card-title text__shadow--light">SciFi Zone</h5>
-                            <span class="badge bg-dark">Code Institute</span>
-                            <span class="badge bg-dark">Milestone 4</span>
-                            <span class="badge bg-dark">Full Stack Frameworks</span>
+                            <span class="badge bg-secondary">Code Institute</span>
+                            <span class="badge bg-secondary">Milestone 4</span>
+                            <span class="badge bg-secondary">Full Stack Frameworks</span>
                         </div>
                         <img src="/static/images/projects/ms4.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -105,7 +105,7 @@
                             <img class="my-1" src="static/images/projects/pytest.svg" alt="Pytest">
                         </div>
 
-                        <div class="card-footer bg-light ">
+                        <div class="card-footer bg-secondary ">
                             <a class="btn btn-primary" href="https://github.com/Ryagg/scifi_zone" class="card-link">Repo</a>
                             <a class="btn btn-primary" href="https://ms4-scifi-zone.herokuapp.com/"
                                 class="card-link">Deployed site</a>
@@ -117,9 +117,9 @@
                     <div class="card h-100 text-white bg-primary text-center card__box-shadow">
                         <div class="card-header">
                             <h5 class="card-title text__shadow--light">ST-Archive</h5>
-                            <span class="badge bg-warning">Code Institute</span>
-                            <span class="badge bg-warning">Milestone 3</span>
-                            <span class="badge bg-warning">Data-centric Development</span>
+                            <span class="badge bg-secondary">Code Institute</span>
+                            <span class="badge bg-secondary">Milestone 3</span>
+                            <span class="badge bg-secondary">Data-centric Development</span>
                         </div>
                         <img src="/static/images/projects/ms3.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -138,9 +138,9 @@
                             <img class="my-1" src="static/images/projects/heroku.svg" alt="Heroku">
                         </div>
 
-                        <div class="card-footer bg-light">
-                            <a class="btn btn-dark" href="https://github.com/Ryagg/st-archive" class="card-link">Repo</a>
-                            <a class="btn btn-dark" href="https://ms3-st-archive.herokuapp.com/"
+                        <div class="card-footer bg-secondary">
+                            <a class="btn btn-primary" href="https://github.com/Ryagg/st-archive" class="card-link">Repo</a>
+                            <a class="btn btn-primary" href="https://ms3-st-archive.herokuapp.com/"
                                 class="card-link">Deployed site</a>
                         </div>
                     </div>
@@ -150,9 +150,9 @@
                     <div class="card h-100 text-white bg-primary text-center card__box-shadow">
                         <div class="card-header">
                             <h5 class="card-title text__shadow--light">Coffee maestro</h5>
-                            <span class="badge bg-light">Code Institute</span>
-                            <span class="badge bg-light">Milestone 1</span>
-                            <span class="badge bg-light">User-centric Frontend Development</span>
+                            <span class="badge bg-secondary">Code Institute</span>
+                            <span class="badge bg-secondary">Milestone 1</span>
+                            <span class="badge bg-secondary">User-centric Frontend Development</span>
                         </div>
                         <img src="/static/images/projects/ms1.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -165,7 +165,7 @@
                             <img class="my-1" src="static/images/projects/bootstrap.svg" alt="Bootstrap">
                         </div>
 
-                        <div class="card-footer bg-light">
+                        <div class="card-footer bg-secondary">
                             <a class="btn btn-primary" href="https://github.com/Ryagg/ms1-coffee-maestro" class="card-link">Repo</a>
                             <a class="btn btn-primary" href="https://ryagg.github.io/ms1-coffee-maestro"
                                 class="card-link">Deployed site</a>
@@ -177,7 +177,7 @@
                     <div class="card h-100 text-white bg-primary  text-center card__box-shadow">
                         <div class="card-header">
                             <h5 class="card-title text__shadow--light">In memoriam Whitey</h5>
-                            <span class="badge bg-dark">My very first website</span>
+                            <span class="badge bg-secondary">My very first website</span>
                         </div>
                         <img src="/static/images/projects/in-memoriam-whitey.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -198,7 +198,7 @@
         </div>
     </section>
     <!-- Skills -->
-    <section id="skills" class="pt-1 text-center bg-light">
+    <section id="skills" class="pt-1 text-center bg-secondary">
         <div class="section-heading">
             <h2 class="my-4 pb-4 heading__text--shadow">Skills</h2>
         </div>
