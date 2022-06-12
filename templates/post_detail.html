@@ -1,0 +1,33 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block content %}
+    <section id="post-detail" class="mt-5 pt-5">
+        <div class="container">
+            <div class="row mt-5 pt-5">
+                <div class="col col-md-10 mx-auto mt-3">
+                    <div class="card mb-4 card__box-shadow">
+                        <div class="card-header bg-info">
+                            <h1 class="card-title text-white">{{ object.title }}</h1>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text ">{{ object.content | safe }}</p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="card-text text-muted h6">
+                                {{ post.author }} | {{ post.created_on}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container my-5 py-5">
+        <div class="row text-center">
+            <div class="col mx-auto">
+                <a href="{% url 'blog'  %}" class="btn btn-primary text-center">Back to blog posts</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
