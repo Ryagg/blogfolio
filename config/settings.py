@@ -36,7 +36,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool('DJANGO_DEBUG', default=False)
 
-ALLOWED_HOSTS = ['.sbftp.dev', '.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    'scott.sbftp.dev',
+    'scott-blogfolio.herokuapp.com', 'localhost', '127.0.0.1',
+]
 
 
 # Application definition
