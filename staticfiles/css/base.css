@@ -14,7 +14,7 @@
 /*----- GENERAL STYLES -----*/
 body {
     font-family: "Ubuntu", sans-serif;
-    background-color: #fff;
+    background-color: #1e293b;
 }
 
 h1,
@@ -24,6 +24,12 @@ h4,
 h5,
 h6 {
     font-family: "Fira Code", monospace;
+}
+
+#about,
+#portfolio,
+#skills {
+    background-color: #1e293b;
 }
 
 /*----- NAVBAR -----*/
@@ -54,6 +60,7 @@ h6 {
         transform: scale(1.2);
     }
 }
+
 .hvr-pop {
     display: inline-block;
     vertical-align: middle;
@@ -61,6 +68,7 @@ h6 {
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
+
 .hvr-pop:hover,
 .hvr-pop:focus,
 .hvr-pop:active {
@@ -77,11 +85,11 @@ h6 {
 /*----- TEXT EFFECTS -----*/
 .heading__text--shadow {
     /* code from https://css-tricks.com/almanac/properties/t/text-shadow/ */
-    color: #2c3e50;
-    text-shadow: 1px 0px 1px #ccddff, 0px 1px 1px #476685, 2px 1px 1px #ccddff, 1px 2px 1px #476685,
-        3px 2px 1px #ccddff, 2px 3px 1px #476685, 4px 3px 1px #ccddff, 3px 4px 1px #476685,
-        5px 4px 1px #ccddff, 4px 5px 1px #476685, 6px 5px 1px #ccddff, 5px 6px 1px #476685,
-        7px 6px 1px #ccddff;
+    color: #f8fafc;
+    text-shadow: 1px 0px 1px #94a3b8, 0px 1px 1px #476685, 2px 1px 1px #94a3b8, 1px 2px 1px #476685,
+        3px 2px 1px #94a3b8, 2px 3px 1px #476685, 4px 3px 1px #94a3b8, 3px 4px 1px #476685,
+        5px 4px 1px #94a3b8, 4px 5px 1px #476685, 6px 5px 1px #94a3b8, 5px 6px 1px #476685,
+        7px 6px 1px #94a3b8;
 }
 
 .text__shadow--light {
@@ -90,8 +98,8 @@ h6 {
 
 /*----- SHADOW EFFECTS -----*/
 .card__box-shadow {
-    -webkit-box-shadow: 10px 12px 0.5rem rgba(0, 0, 0, 0.5);
-    box-shadow: 10px 12px 0.5rem rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 8px 9px 0.5rem rgba(100, 116, 139, 0.8);
+    box-shadow: 8px 9px 0.5rem rgba(100, 116, 139, 0.8);
 }
 
 /*----- TOOLTIP -----*/

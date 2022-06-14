@@ -34,7 +34,7 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
                 <img class="icon--smaller" src="{% static 'images/logo_bw.png' %} " alt="Logo with name, terminal, hammer, and settings symbol">
@@ -62,7 +62,7 @@
             </ul>
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-dark" type="submit">Search</button>
+                <button class="btn btn-primary" type="submit">Search</button>
             </form>
             </div>
         </div>
@@ -71,7 +71,7 @@
     {% block content %}
     {% endblock %}
 
-    <footer class="footer mt-auto py-3 bg-primary">
+    <footer class="footer mt-auto py-3 bg-dark">
         <div class="container py-3">
             <div class="row">
                 <div class="col col-lg-4 text-center">
