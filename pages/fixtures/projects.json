@@ -1,0 +1,136 @@
+[
+    {
+        "pk": 1,
+        "model": "pages.project",
+        "fields": {
+            "name": "In memoriam Whitey",
+            "tags": "My very first website",
+            "image_url": "in-memoriam-whitey.png",
+            "skills": ["HTML5", "CSS3"],
+            "badges": ["html5.svg", "css3.svg"],
+            "live_url": "https://in-memoriam-whitey.de/"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "pages.project",
+        "fields": {
+            "name": "Coffee maestro",
+            "tags": ["Code Institute", "Milestone 1", "User-centric Frontend Development"],
+            "image_url": "ms1.png",
+            "skills": ["HTML5", "CSS3", "Bootstrap"],
+            "badges": ["html5.svg", "css3.svg", "bootstrap.svg"],
+            "repo_url": "https://github.com/Ryagg/ms1-coffee-maestro",
+            "live_url": "https://ryagg.github.io/ms1-coffee-maestro"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "pages.project",
+        "fields": {
+            "name": "ST-Archive",
+            "tags": ["Code Institute", "Milestone 3", "Data-centric Development"],
+            "image_url": "ms3.png",
+            "skills": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "jQuery",
+                "Bulma",
+                "Python",
+                "Jinja",
+                "Flask",
+                "mongoDB",
+                "Heroku"
+            ],
+            "badges": [
+                "html5.svg",
+                "css3.svg",
+                "js.svg",
+                "jquery.svg",
+                "bulma.svg",
+                "python.svg",
+                "jinja_shield.svg",
+                "flask.svg",
+                "mongodb.svg",
+                "heroku.svg"
+            ],
+            "repo_url": "https://github.com/Ryagg/st-archive",
+            "live_url": "https://ms3-st-archive.herokuapp.com/"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "pages.project",
+        "fields": {
+            "name": "SciFi Zone",
+            "tags": ["Code Institute", "Milestone 4", "Full Stack Frameworks"],
+            "image_url": "ms4.png",
+            "skills": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "jQuery",
+                "Bulma",
+                "Python",
+                "Django",
+                "PostgreSQL",
+                "Heroku",
+                "AWS",
+                "Stripe",
+                "Pytest"
+            ],
+            "badges": [
+                "html5.svg",
+                "css3.svg",
+                "js.svg",
+                "jquery.svg",
+                "bulma.svg",
+                "python.svg",
+                "django_shield.svg",
+                "postgresql.svg",
+                "heroku.svg",
+                "amazonaws.svg",
+                "stripe.svg",
+                "pytest.svg"
+            ],
+            "repo_url": "https://github.com/Ryagg/scifi_zone",
+            "live_url": "https://ms4-scifi-zone.herokuapp.com/"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "pages.project",
+        "fields": {
+            "name": "Blogfolio",
+            "tags": ["Full Stack Frameworks", "CI", "Github actions"],
+            "image_url": "blogfolio.png",
+            "skills": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "Bootstrap",
+                "Python",
+                "Django",
+                "PostgreSQL",
+                "Heroku",
+                "Pytest",
+                "Docker"
+            ],
+            "badges": [
+                "html5.svg",
+                "css3.svg",
+                "js.svg",
+                "bootstrap.svg",
+                "python.svg",
+                "django_shield.svg",
+                "postgresql.svg",
+                "heroku.svg",
+                "pytest.svg",
+                "docker-shield.svg"
+            ],
+            "repo_url": "https://github.com/Ryagg/blogfolio",
+            "live_url": "https://scott.sbftp.dev"
+        }
+    }
+]
