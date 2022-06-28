@@ -67,24 +67,23 @@
             <h2 class="mt-5 pt-3 heading__text--shadow">Portfolio</h2>
         </div>
         <div class="container portfolio-intro mb-5 pb-3 text-white">
+        <div class="container portfolio-intro mb-4 text-white">
             <p>A selection of my projects in reverse chronological order.
             </p>
         </div>
         <div class="container projects px-1">
             <div class="row mt-3 mb-3 pb-3">
-                {% for project in projects %}
+                <!-- SciFi Zone -->
                 <div class="col col-md-6 mb-5">
                     <div class="card h-100 text-white bg-primary text-center card__box-shadow">
                         <div class="card-header">
-                            <h5 class="card-title text__shadow--light">{{ project.name }}  </h5>
+                            <h5 class="card-title text__shadow--light">SciFi Zone</h5>
                             <span class="badge bg-secondary">Code Institute</span>
                             <span class="badge bg-secondary">Milestone 4</span>
                             <span class="badge bg-secondary">Full Stack Frameworks</span>
                         </div>
                         <img src="/static/images/projects/ms4.png" class="card-img-top" alt="...">
                         <div class="card-body">
-
-
                             <img class="my-1" src="static/images/projects/html5.svg" alt="HTML5">
                             <img class="my-1" src="static/images/projects/css3.svg" alt="CSS3">
                             <img class="my-1" src="static/images/projects/js.svg" alt="JavaScript">
@@ -99,15 +98,83 @@
                             <img class="my-1" src="static/images/projects/stripe.svg" alt="Stripe">
                             <img class="my-1" src="static/images/projects/pytest.svg" alt="Pytest">
                         </div>
-
                         <div class="card-footer bg-secondary ">
-                            <a class="btn btn-primary" href="{{ project.repo_url }} " class="card-link">Repo</a>
-                            <a class="btn btn-primary" href="{{ project.live_url }}"
+                            <a class="btn btn-primary" href="https://github.com/Ryagg/scifi_zone" class="card-link">Repo</a>
+                            <a class="btn btn-primary" href="https://ms4-scifi-zone.herokuapp.com/"
                                 class="card-link">Deployed site</a>
                         </div>
                     </div>
                 </div>
-                {% endfor %}
+                <!-- ST-Archive -->
+                <div class="col col-md-6 mb-5">
+                    <div class="card h-100 text-white bg-primary text-center card__box-shadow">
+                        <div class="card-header">
+                            <h5 class="card-title text__shadow--light">ST-Archive</h5>
+                            <span class="badge bg-secondary">Code Institute</span>
+                            <span class="badge bg-secondary">Milestone 3</span>
+                            <span class="badge bg-secondary">Data-centric Development</span>
+                        </div>
+                        <img src="/static/images/projects/ms3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <img class="my-1" src="static/images/projects/html5.svg" alt="HTML5">
+                            <img class="my-1" src="static/images/projects/css3.svg" alt="CSS3">
+                            <img class="my-1" src="static/images/projects/js.svg" alt="JavaScript">
+                            <img class="my-1" src="static/images/projects/jquery.svg" alt="jQuery">
+                            <img class="my-1" src="static/images/projects/bulma.svg" alt="Bulma">
+                            <img class="my-1" src="static/images/projects/python.svg" alt="Python">
+                            <img class="my-1" src="static/images/projects/jinja_shield.svg" alt="Jinja">
+                            <img class="my-1" src="static/images/projects/flask.svg" alt="Flask">
+                            <img class="my-1" src="static/images/projects/mongodb.svg" alt="MongoDB">
+                            <img class="my-1" src="static/images/projects/heroku.svg" alt="Heroku">
+                        </div>
+                        <div class="card-footer bg-secondary">
+                            <a class="btn btn-primary" href="https://github.com/Ryagg/st-archive" class="card-link">Repo</a>
+                            <a class="btn btn-primary" href="https://ms3-st-archive.herokuapp.com/"
+                                class="card-link">Deployed site</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Coffee maestro -->
+                <div class="col col-md-6 mb-5">
+                    <div class="card h-100 text-white bg-primary text-center card__box-shadow">
+                        <div class="card-header">
+                            <h5 class="card-title text__shadow--light">Coffee maestro</h5>
+                            <span class="badge bg-secondary">Code Institute</span>
+                            <span class="badge bg-secondary">Milestone 1</span>
+                            <span class="badge bg-secondary">User-centric Frontend Development</span>
+                        </div>
+                        <img src="/static/images/projects/ms1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <img class="my-1" src="static/images/projects/html5.svg" alt="HTML5">
+                            <img class="my-1" src="static/images/projects/css3.svg" alt="CSS3">
+                            <img class="my-1" src="static/images/projects/jquery.svg" alt="jQuery">
+                            <img class="my-1" src="static/images/projects/bootstrap.svg" alt="Bootstrap">
+                        </div>
+                        <div class="card-footer bg-secondary">
+                            <a class="btn btn-primary" href="https://github.com/Ryagg/ms1-coffee-maestro" class="card-link">Repo</a>
+                            <a class="btn btn-primary" href="https://ryagg.github.io/ms1-coffee-maestro"
+                                class="card-link">Deployed site</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- In memoriam Whitey -->
+                <div class="col col-md-6 mb-5">
+                    <div class="card h-100 text-white bg-primary  text-center card__box-shadow">
+                        <div class="card-header">
+                            <h5 class="card-title text__shadow--light">In memoriam Whitey</h5>
+                            <span class="badge bg-secondary">My very first website</span>
+                        </div>
+                        <img src="/static/images/projects/in-memoriam-whitey.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <img class="my-1" src="static/images/projects/html5.svg" alt="HTML5">
+                            <img class="my-1" src="static/images/projects/css3.svg" alt="CSS3">
+                        </div>
+                        <div class="card-footer bg-light">
+                            <a class="btn btn-primary" href="https://in-memoriam-whitey.de/"
+                                class="card-link">Deployed site</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -160,7 +227,6 @@
         </div>
     </section>
 {% endblock %}
-
 {% block postloadjs %}
     <script src="{% static 'js/skills.js' %}"></script>
 {% endblock %}
