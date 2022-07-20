@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "~=3.2.0"
+django = "==3.2.14"
 psycopg2-binary = "==2.8.5"
 python-dotenv = "*"
 pylint-django = "*"
@@ -18,7 +18,6 @@ django-allauth = "*"
 django-csp = "*"
 pre-commit = "*"
 django-debug-toolbar = ">=2.2.1"
-environs = {extras = ["django"], version = "*"}
 whitenoise = "*"
 gunicorn = "*"
 
@@ -26,3 +25,7 @@ gunicorn = "*"
 
 [requires]
 python_version = "3.8"
+
+[packages.environs]
+extras = [ "django",]
+version = "*"
