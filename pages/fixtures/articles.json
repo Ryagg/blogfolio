@@ -1,0 +1,32 @@
+[
+    {
+        "pk": 1,
+        "model": "pages.article",
+        "fields": {
+            "name": "java_vs_javascript",
+            "friendly_name": "What’s the difference between Java and JavaScript?",
+            "tags": ["Java", "JavaScript"],
+            "article_url": "https://codeinstitute.net/de/blog/whats-the-difference-between-java-and-javascript/"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "pages.article",
+        "fields": {
+            "name": "python_cheat_sheet",
+            "friendly_name": "Python Cheat Sheet",
+            "tags": ["Python", "primitive data structures", "non-primitive data structures"],
+            "article_url": "https://codeinstitute.net/de/blog/python-cheat-sheet/"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "pages.article",
+        "fields": {
+            "name": "relational_databases",
+            "friendly_name": "Relational databases",
+            "tags": ["relational databases", "SQL"],
+            "article_url": "https://codeinstitute.net/de/blog/relational-databases/"
+        }
+    }
+]

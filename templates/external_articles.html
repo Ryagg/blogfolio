@@ -1,0 +1,32 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block content %}
+    <section class="bloghead mt-5 pt-5">
+        <div class="container">
+            <div class="row mt-5 pt-5">
+                <div class="col col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <h1 class="mb-4 site-heading text-center text-white">My articles on external sites</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="links">
+        <div class="container p-3 mb-3 bg-light card card__box-shadow">
+            <div class="row">
+                <!-- Article Entries Column -->
+                <div class="col col-md-10 mx-auto mt-3">
+                    <ul>
+                        {% for article in articles %}
+                            <li>
+                                <a href="{{ article.article_url }}" class="text-primary fw-bolder" target="_blank" rel="noopener noreferrer">{{ article.friendly_name }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
