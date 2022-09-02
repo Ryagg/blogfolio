@@ -6,7 +6,8 @@
             "name": "java_vs_javascript",
             "friendly_name": "What’s the difference between Java and JavaScript?",
             "tags": ["Java", "JavaScript"],
-            "article_url": "https://codeinstitute.net/de/blog/whats-the-difference-between-java-and-javascript/"
+            "article_url": "https://codeinstitute.net/de/blog/whats-the-difference-between-java-and-javascript/",
+            "status": 1
         }
     },
     {
@@ -16,7 +17,8 @@
             "name": "python_cheat_sheet",
             "friendly_name": "Python Cheat Sheet",
             "tags": ["Python", "primitive data structures", "non-primitive data structures"],
-            "article_url": "https://codeinstitute.net/de/blog/python-cheat-sheet/"
+            "article_url": "https://codeinstitute.net/de/blog/python-cheat-sheet/",
+            "status": 1
         }
     },
     {
@@ -26,7 +28,41 @@
             "name": "relational_databases",
             "friendly_name": "Relational databases",
             "tags": ["relational databases", "SQL"],
-            "article_url": "https://codeinstitute.net/de/blog/relational-databases/"
+            "article_url": "https://codeinstitute.net/de/blog/relational-databases/",
+            "status": 1
+        }
+    },
+    {
+        "pk": 4,
+        "model": "pages.article",
+        "fields": {
+            "name": "html_head_tag",
+            "friendly_name": "HTML Head Tag: What is it and How to Use",
+            "tags": ["HTML"],
+            "article_url": "",
+            "status": 0
+        }
+    },
+    {
+        "pk": 5,
+        "model": "pages.article",
+        "fields": {
+            "name": "html_body_tag",
+            "friendly_name": "HTML Body Tag: What is it and How to Use",
+            "tags": ["HTML"],
+            "article_url": "",
+            "status": 0
+        }
+    },
+    {
+        "pk": 6,
+        "model": "pages.article",
+        "fields": {
+            "name": "add_images_in_html",
+            "friendly_name": "How to add images in HTML",
+            "tags": ["HTML"],
+            "article_url": "",
+            "status": 0
         }
     }
 ]

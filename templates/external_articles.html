@@ -18,11 +18,29 @@
             <div class="row">
                 <!-- Article Entries Column -->
                 <div class="col col-md-10 mx-auto mt-3">
+                    <h2 class="text-center">Published articles</h2>
                     <ul>
                         {% for article in articles %}
-                            <li>
-                                <a href="{{ article.article_url }}" class="text-primary fw-bolder" target="_blank" rel="noopener noreferrer">{{ article.friendly_name }}</a>
-                            </li>
+                            {% if article.status == 1 %}
+                                <li>
+                                    <a href="{{ article.article_url }}" class="text-primary fw-bolder" target="_blank" rel="noopener noreferrer">{{ article.friendly_name }}</a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Article Entries Column -->
+                <div class="col col-md-10 mx-auto mt-3">
+                    <h2 class="text-center">Submitted articles</h2>
+                    <ul>
+                        {% for article in articles  %}
+                            {% if article.status == 0 %}
+                                <li>
+                                    {{ article.friendly_name }}
+                                </li>
+                            {% endif %}
                         {% endfor %}
                     </ul>
                 </div>
