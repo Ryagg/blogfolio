@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "==3.2.14"
+django = "==3.2.15"
 psycopg2-binary = "==2.8.5"
 python-dotenv = "*"
 pylint-django = "*"
@@ -20,6 +20,7 @@ pre-commit = "*"
 django-debug-toolbar = ">=2.2.1"
 whitenoise = "*"
 gunicorn = "*"
+oauthlib = "==3.2.1"
 
 [dev-packages]
 
@@ -28,4 +29,4 @@ python_version = "3.8"
 
 [packages.environs]
 extras = [ "django",]
-version = "*"
+version = "3.2.15"
