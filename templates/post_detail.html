@@ -11,7 +11,7 @@
                             <h1 class="card-title text-white">{{ object.title }}</h1>
                         </div>
                         <div class="card-body">
-                            <p class="card-text ">{{ object.content|safe|linebreaks }}</p>
+                            <p class="card-text ">{{ object.content|linebreaks|safe }}</p>
                         </div>
                         <div class="card-footer">
                             <p class="card-text text-muted h6">

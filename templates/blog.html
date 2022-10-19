@@ -31,7 +31,7 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text">
-                                {{post.content|safe|linebreaks|slice:":200" }}
+                                {{post.content|linebreaks|slice:":200" }}
                             </p>
                             <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More <span><i class="fa-regular fa-arrow-right"></i></span></a>
                         </div>
