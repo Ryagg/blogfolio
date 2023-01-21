@@ -8,12 +8,9 @@ const by = Object.freeze({
 });
 
 // update Copyright date
-document.addEventListener("DOMContentLoaded", () => {
-    let currentYear = new Date().getFullYear();
-    let createdIn = 2022;
-    let yearID = by.id("year");
-    console.log(yearID);
-    if (currentYear > createdIn) {
-        yearID.innerHTML = `${createdIn} - ${currentYear}`;
-    }
-  });
+let currentYear = new Date().getFullYear();
+let createdIn = 2022;
+let yearID = by.id("year");
+if (currentYear > createdIn) {
+    yearID.innerHTML = `${createdIn} - ${currentYear}`;
+}
