@@ -20,12 +20,9 @@ pre-commit = "*"
 django-debug-toolbar = ">=2.2.1"
 whitenoise = "*"
 gunicorn = "*"
+environs = {extras = [ "django",], version = "*"}
 
 [dev-packages]
 
 [requires]
 python_version = "3.8"
-
-[packages.environs]
-extras = [ "django",]
-version = "*"
