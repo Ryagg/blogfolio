@@ -75,5 +75,16 @@
             "article_url": "https://www.codu.co/articles/pytest-an-overview-for-new-users-0bmzyrbf",
             "status": 1
         }
+    },
+    {
+        "pk": 8,
+        "model": "pages.article",
+        "fields": {
+            "name": "two_pointers_approach_for_array_and_string_problems",
+            "friendly_name": "The two-pointers approach for array and string problems",
+            "tags": ["String", "Arrays", "Algorithms"],
+            "article_url": "https://www.codu.co/articles/the-two-pointers-approach-for-array-and-string-problems-w8rcukwy",
+            "status": 1
+        }
     }
 ]
