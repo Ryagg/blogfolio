@@ -86,5 +86,16 @@
             "article_url": "https://www.codu.co/articles/the-two-pointers-approach-for-array-and-string-problems-w8rcukwy",
             "status": 1
         }
+    },
+    {
+        "pk": 9,
+        "model": "pages.article",
+        "fields": {
+            "name": "how_to_secure_your_flask_application",
+            "friendly_name": "How to secure your Flask application",
+            "tags": ["Flask", "Web application security", "Content security policy", "CSRF"],
+            "article_url": "https://www.codu.co/articles/how-to-improve-the-security-of-your-flask-application-gmf81uww",
+            "status": 1
+        }
     }
 ]
