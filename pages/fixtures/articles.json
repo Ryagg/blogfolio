@@ -97,5 +97,16 @@
             "article_url": "https://www.codu.co/articles/how-to-improve-the-security-of-your-flask-application-gmf81uww",
             "status": 1
         }
+    },
+    {
+        "pk": 10,
+        "model": "pages.article",
+        "fields": {
+            "name": "python_itertools:_an_overview",
+            "friendly_name": "Python itertools: an overview",
+            "tags": ["Python", "Itertools", "Iterators"],
+            "article_url": "https://www.codu.co/articles/python-itertools-an-overview-fqrwzmiu",
+            "status": 1
+        }
     }
 ]
