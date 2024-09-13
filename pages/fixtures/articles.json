@@ -39,8 +39,8 @@
             "name": "html_head_tag",
             "friendly_name": "HTML Head Tag: What is it and How to Use",
             "tags": ["HTML"],
-            "article_url": "",
-            "status": 0
+            "article_url": "https://codeinstitute.net/ie/blog/html-head-tag/",
+            "status": 1
         }
     },
     {
@@ -50,8 +50,8 @@
             "name": "html_body_tag",
             "friendly_name": "HTML Body Tag: What is it and How to Use",
             "tags": ["HTML"],
-            "article_url": "",
-            "status": 0
+            "article_url": "https://codeinstitute.net/ie/blog/html-body-tag/",
+            "status": 1
         }
     },
     {
@@ -63,6 +63,50 @@
             "tags": ["HTML"],
             "article_url": "",
             "status": 0
+        }
+    },
+    {
+        "pk": 7,
+        "model": "pages.article",
+        "fields": {
+            "name": "pytest_overview",
+            "friendly_name": "pytest: an overview for new users",
+            "tags": ["pytest", "Python", "Testing"],
+            "article_url": "https://www.codu.co/articles/pytest-an-overview-for-new-users-0bmzyrbf",
+            "status": 1
+        }
+    },
+    {
+        "pk": 8,
+        "model": "pages.article",
+        "fields": {
+            "name": "two_pointers_approach_for_array_and_string_problems",
+            "friendly_name": "The two-pointers approach for array and string problems",
+            "tags": ["String", "Arrays", "Algorithms"],
+            "article_url": "https://www.codu.co/articles/the-two-pointers-approach-for-array-and-string-problems-w8rcukwy",
+            "status": 1
+        }
+    },
+    {
+        "pk": 9,
+        "model": "pages.article",
+        "fields": {
+            "name": "how_to_secure_your_flask_application",
+            "friendly_name": "How to secure your Flask application",
+            "tags": ["Flask", "Web application security", "Content security policy", "CSRF"],
+            "article_url": "https://www.codu.co/articles/how-to-improve-the-security-of-your-flask-application-gmf81uww",
+            "status": 1
+        }
+    },
+    {
+        "pk": 10,
+        "model": "pages.article",
+        "fields": {
+            "name": "python_itertools:_an_overview",
+            "friendly_name": "Python itertools: an overview",
+            "tags": ["Python", "Itertools", "Iterators"],
+            "article_url": "https://www.codu.co/articles/python-itertools-an-overview-fqrwzmiu",
+            "status": 1
         }
     }
 ]
