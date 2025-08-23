@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 django = "==3.2.14"
-psycopg2-binary = "==2.8.5"
+psycopg2-binary = "*"
 python-dotenv = "*"
 pylint-django = "*"
 pycodestyle = "*"
@@ -25,4 +25,4 @@ environs = {extras = [ "django",], version = "*"}
 [dev-packages]
 
 [requires]
-python_version = "3.8"
+python_version = "3.11."

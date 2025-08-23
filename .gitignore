@@ -1,7 +1,32 @@
+# Env & Virtualenvs
 .env
+.venv
+venv/
+ENV/
+env/
+*.env
+.Python
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.egg-info/
+*.egg
+
+# Pipenv & pyenv
+Pipfile.lock
+.pyenv/
+.local/share/virtualenvs/
+
+# VS Code
+.vscode/
+
+# Django static & media
+staticfiles/
+media/
+
+# Misc
 docker-compose-prod.yml
 *.sqlite3
-__pycache__/
-*.pyc
-.vscode/
 mysite.log
