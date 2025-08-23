@@ -1,5 +1,5 @@
 # Pull base image
-FROM python:3.8
+FROM python:3.11-slim
 
 # Set environment variables
 ENV PIP_DISABLE_PIP_VERSION_CHECK 1
@@ -10,8 +10,8 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /portfolio_page
 
 # Install dependencies
-COPY Pipfile Pipfile.lock /portfolio_page/
-RUN pip install pipenv && pipenv install --system
+COPY requirements.txt /portfolio_page/
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy project
 COPY . /portfolio_page/
