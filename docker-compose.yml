@@ -1,31 +1,40 @@
 version: "3.8"
 
 services:
-    web:
-        build: .
-        # command: python /portfolio_page/manage.py runserver 0.0.0.0:8000
-        command: gunicorn config.wsgi -b 0.0.0.0:8000
-        volumes:
-            - .:/portfolio_page
-        ports:
-            - 8000:8000
-        depends_on:
-            - db
-        environment:
-            - "DJANGO_SECRET_KEY=os.environ.get('SECRET_KEY', '')"
-            - "DJANGO_DEBUG=True"
-            - "DJANGO_SECURE_SSL_REDIRECT=False"
-            - "DJANGO_SECURE_HSTS_SECONDS=0"
-            - "DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS=False"
-            - "DJANGO_SECURE_HSTS_PRELOAD=False"
-            - "DJANGO_SESSION_COOKIE_SECURE=False"
-            - "DJANGO_CSRF_COOKIE_SECURE=False"
-    db:
-        image: postgres:11
-        volumes:
-            - postgres_data:/var/lib/postgresql/data/
-        environment:
-            - "POSTGRES_HOST_AUTH_METHOD=trust"
+  db:
+    image: postgres:11
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  web:
+    build: .
+    command: sh -c "while ! nc -z db 5432; do sleep 1; done; gunicorn config.wsgi -b 0.0.0.0:8000"
+    volumes:
+      - .:/portfolio_page
+    ports:
+      - 8000:8000
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DJANGO_SECRET_KEY: "override-local-key"
+      DJANGO_DEBUG: "True"
+      DJANGO_ALLOWED_HOSTS: "localhost,127.0.0.1"
+      DJANGO_SECURE_SSL_REDIRECT: "False"
+      DJANGO_SECURE_HSTS_SECONDS: "0"
+      DJANGO_SECURE_HSTS_INCLUDE_SUBDOMAINS: "False"
+      DJANGO_SECURE_HSTS_PRELOAD: "False"
+      DJANGO_SESSION_COOKIE_SECURE: "False"
+      DJANGO_CSRF_COOKIE_SECURE: "False"
 
 volumes:
-    postgres_data:
+  postgres_data:

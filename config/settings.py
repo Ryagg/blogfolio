@@ -113,7 +113,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': env.dj_db_url(
         'DATABASE_URL',
-        default='postgres://postgres@db/postgres',
+        default='postgres://postgres:postgres@db:5432/postgres',
     ),
 }
 
