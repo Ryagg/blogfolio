@@ -9,9 +9,11 @@ ENV PYTHONUNBUFFERED 1
 # Set work directory
 WORKDIR /portfolio_page
 
-# Install dependencies
-COPY requirements.txt /portfolio_page/
-RUN pip install --no-cache-dir -r requirements.txt
-
 # Copy project
 COPY . /portfolio_page/
+
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Run collectstatic during image build
+RUN python manage.py collectstatic --noinput
